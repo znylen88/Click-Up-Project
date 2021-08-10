@@ -662,11 +662,15 @@ h3 {
 }
 
 @media screen and (max-width: 500px) {
-  .polygon-images {display: unset; top: 80px; left: 40px; height: 120px; width: 120px;}
+  .polygon-images {display: unset; top: 60px; left: 10px; height: 120px; width: 120px;}
+}
+
+@media screen and (max-width: 450px) {
+  .polygon-images {display: unset; top: 85px; left: 10px; height: 90px; width: 90px;}
   .rect-polygon {width: 350px; height: 350px;}
-  .first-txt {font-size: 18px; top: 50px; left: 190px;}
-  .second-txt {font-size: 12px; top: 110px; left: 190px;}
-  .third-txt {font-size: 12px; top: 260px; left: 190px;}
+  .first-txt {font-size: 18px; top: 50px; left: 140px;}
+  .second-txt {font-size: 12px; top: 110px; left: 140px;}
+  .third-txt {font-size: 12px; top: 260px; left: 140px;}
 }
 
 
