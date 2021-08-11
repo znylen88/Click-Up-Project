@@ -200,6 +200,16 @@ h2 {
     border-radius: 50px;
 }
 
+.dot {
+  border-radius: 50%; 
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 10%;
+  top: 92%;
+  background: #FFFFFF;
+}
+
 .divider {
     max-width: 100%;
     height: 2px;
@@ -478,30 +488,23 @@ h3 {
     opacity: 0.1;
   }
 
+  .john-fang-photo {
+    height: 90px; 
+    width: 90px; 
+    position: relative; 
+    top: 50px; 
+    left: 50px;
+  }
+
   .testimony-card {
-      width: 645px;
-      height: auto;
+      width: 60%;
       background: #FFFFFF;
       box-shadow: 0px 20px 0px #7b31e2b3;
       border-radius: 20px;
-      margin-top: 249px;
-      margin-left: 93px;
+      position: relative;
+      top: 249px;
+      left: 93px;
   }
-
-  @media screen and (max-width: 800px) {
-    .testimony-card {
-      width: 80%;
-      display: block;
-      margin-bottom: 20px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .testimony-card {
-      width: 80%;
-      display: block;
-      margin-bottom: 20px;
-    }
-}
 
   .john-fang-name {
     font-family: Avenir;
@@ -511,10 +514,13 @@ h3 {
     line-height: 160%;
     letter-spacing: 0.005em;
     color: #212353;
+    margin-top: -20px;
+    margin-left: 180px;
   }
 
   .john-fang-website {
     font-weight: 500;
+    margin-top: 5px;
     font-size: 14px;
     line-height: 160%;
     letter-spacing: 0.01em;
@@ -522,11 +528,49 @@ h3 {
   }
 
   .john-fang-info {
+    width: 75%;
     font-weight: normal;
     font-size: 18px;
     line-height: 180%;
+    margin-top: 20px;
     color: #4B5D68;
   }
+
+  .vector-1 {
+    position: absolute;
+    top: 92%;
+    left: 70%;
+  }
+
+  .vector-2 {
+    position: absolute;
+    top: 92%;
+    left: 88%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .testimony-card {
+      width: 60%;
+    }
+    .john-fang-info {
+      font-size: 12px;
+      line-height: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .testimony-card {
+    margin-left: -25px;
+  }
+  .john-fang-name {font-size: 14px; margin-left: 40px}
+  .john-fang-website {font-size: 10px;}
+  .john-fang-photo {top: 30px; left: 150px; width: 50px; height: 50px;}
+  h2 {font-size: 20px;}
+}
+
+@media screen and (max-width: 450px) {
+  .john-fang-photo {top: 20px; left: 130px; width: 40px; height: 40px;}
+}
   
   @media screen and (max-width: 800px) {
     .purple-rectangle { display: none; }
@@ -661,6 +705,10 @@ h3 {
   height: 160px;
 }
 
+.polygon-arrow  {
+  display: inline-block;
+}
+
 @media screen and (max-width: 500px) {
   .polygon-images {display: unset; top: 60px; left: 10px; height: 120px; width: 120px;}
 }
@@ -672,6 +720,7 @@ h3 {
   .second-txt {font-size: 12px; top: 110px; left: 140px;}
   .third-txt {font-size: 12px; top: 260px; left: 140px;}
 }
+
 
 
 
