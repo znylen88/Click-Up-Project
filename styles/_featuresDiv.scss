@@ -1,0 +1,25 @@
+.features-box {
+    text-align: center;
+}
+h1 {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+    margin-top: 100px;
+}
+.features-p {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 600px) {
+    .features-box {margin: 50px;}
+}

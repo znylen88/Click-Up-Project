@@ -1,0 +1,74 @@
+.polygon-div {
+    display: grid; 
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.polygon-column {
+    float: left;
+    width: 50%;
+}
+.first-txt {
+    position: absolute;
+    top: 19px;
+    left: 172px;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130%;
+    color: #212353;
+}
+.second-txt {
+    position: absolute;
+    top: 89px;
+    left: 172px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #4B5D68;
+    text-align: left;
+    width: 200px;
+}
+.third-txt {
+  position: absolute;
+  top: 289px;
+  left: 172px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+.polygon-images {
+    position: absolute;
+    top: 65px;
+    left: -50px;
+    width: 180px;
+    height: 160px;
+}
+.polygon-arrow  {
+    display: inline-block;
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1000px) {
+    .polygon-images {display: none;}
+}
+
+@media screen and (max-width: 900px) {
+    .polygon-column {width: 100%;} 
+}
+  
+@media screen and (max-width: 500px) {
+    .polygon-images {display: unset; top: 60px; left: 10px; height: 120px; width: 120px;}
+}
+  
+@media screen and (max-width: 450px) {
+    .polygon-images {display: unset; top: 85px; left: 10px; height: 90px; width: 90px;}
+    .rect-polygon {width: 350px; height: 350px;}
+    .first-txt {font-size: 18px; top: 50px; left: 140px;}
+    .second-txt {font-size: 12px; top: 110px; left: 140px;}
+    .third-txt {font-size: 12px; top: 260px; left: 140px;}
+}

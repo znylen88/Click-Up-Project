@@ -1,18 +1,76 @@
-// @mixin flexCenter($direction, $background) {
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: $direction;
-//     background: $background;
-// }
-
 header {
-    // @include flexCenter(column, green);
-    color: $textColor;
-    font-family: $headerFont;
+    color: #212353;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li {
+    display: inline;
+    margin-right: 40px;
+    a {
+        text-decoration: none;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;  
+        color: #4B5D68;
+    }
+    .about {
+        color: #212353;
+        font-weight: 800;
+    }
+}
+.navbar-button {
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border: none;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+.header-arrow {
+width: 20px;
+height: 14px;
+padding-left: 10px;
+}
+.purple-rectangle {
+    border-radius: 20px;
+    background-color: #9C69E2;
+    width: 20px;
+    height: 20px;
+    display: inline;
+    border: none;
+    margin-right: 5px;
+}
+.pink-rectangle {
+    width: 20px;
+    height: 35px;
+    border-radius: 20px;
+    background: #F063B8;
+    display: inline;
+    border: none;
+    margin-right: 100px;
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 800px) {
+    .purple-rectangle { display: none; }
+    .pink-rectangle {display: none; }   /* hide it elsewhere */
+    #top-navbar-button {margin-top: 50px;}
+    ul {text-align: center;};
 }
